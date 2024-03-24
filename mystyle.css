@@ -1,0 +1,240 @@
+html, body{
+     margin:0px;
+     padding:0px;
+}
+
+.picright {
+	float: right;
+	clear: right;
+}
+
+.picleft {
+	float: left;
+	clear: left;
+}
+
+body {
+    background-color: #515A5A;
+}
+
+h1   {
+    color:  #f2f2f2;
+    font-size:  64px;
+    text-align:  center;
+}
+
+h2   {
+    color:  #f2f2f2;
+    font-size:  32px;
+    margin-left: 1%;
+}
+
+p {
+    color:  #f2f2f2;
+    font-size:  24px;
+    margin-left: 1%;
+}
+
+.banner {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.banner a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav {
+    background-color: #424949;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav a:hover {
+    background-color: #B03A2E;
+    color: black;
+}
+
+.nav a.active {
+    background-color: #B03A2E;
+    color: white;
+}
+
+.nav img {
+    width:45px;
+    margin-top: 4px;
+    margin-left: 66%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td, th {
+    border: 1px solid #EC7063;
+    text-align: left;
+    color: #000000;
+    font-size: 24px;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #EC7063;
+}
+
+tr:nth-child(odd) {
+    background-color: #F5B7B1;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.disc {
+    list-style-type: disc;
+    color: #f2f2f2;
+    font-size:  24px;
+    text-align: justify;
+}
+
+.square {
+    list-style-type: square;
+    margin-left: 2em;
+    color: #f2f2f2;
+    font-size:  24px;
+    text-align: justify;
+}
+
+.containerleft {
+  position: relative;
+  width: 50%;
+  max-width: 50%; /* Maximum width */
+  float: left;
+  clear: left;
+}
+
+.containerright {
+  position: relative;
+  width: 50%;
+  max-width: 50%; /* Maximum width */
+  float: right;
+  clear: right;
+}
+
+.containerleft .content {
+  position: absolute; /* Position the background text */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  text-align: center;
+  width: 100%; /* Full width */
+
+}
+
+.containerright .content {
+  position: absolute; /* Position the background text */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  text-align: center;
+  width: 100%; /* Full width */
+
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.custom-select {
+  background-color: #f1f1f1 !important; 
+  position: relative !important;
+  font-family: Arial !important;
+}
+
+.custom-select select {
+  background-color: #f1f1f1;
+  display: none; /*hide original SELECT element:*/ 
+}
+
+.select-selected {
+  background-color: #f1f1f1;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  background-color: #f1f1f1;
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: grey transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  background-color: #f1f1f1;
+  border-color: transparent transparent grey transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  background-color: #f1f1f1;
+  color: grey;
+  padding: 0px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  background-color: #f1f1f1;
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
